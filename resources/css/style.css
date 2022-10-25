@@ -1,0 +1,237 @@
+html {
+    background-color: #22272e;
+    color: white;
+    font-size: 16px;
+    font-family:'Lato', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body{
+    
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.85rem;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-size: 1.85rem;
+}
+
+@media only screen and (max-width: 510px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3, a{
+        font-size: .925rem;
+    }
+    h4{
+        font-size: .725rem;
+    }
+}
+
+.header{
+    margin-top: 10px;
+}
+
+/* Nav Bar Section */
+
+#nav-container{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-container p{
+    display: inline-flex;
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    a {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        text-align: center;
+    }
+    #nav-container p{
+        width: 33%;
+    }
+    #nav-container{
+        justify-content: space-between;
+    }
+    .small {
+        margin-left: 12px;
+    }
+    .large {
+        flex-basis: 160px;
+    }
+}
+
+/* Company Intro Section */
+
+#bg-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+
+}
+
+.bg-content{
+    background-color: #22272e;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   opacity: 0.95;
+}
+
+.bg-content h2, .bg-content h3 {
+   margin-top: 7px;
+   margin-bottom: 8px;
+}
+
+
+
+/* Portfolio Section */
+
+#portfolio-header{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#portfolio-header h2 {
+    margin-bottom: 15px;
+}
+
+#portfolio-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.portfolio-content h3{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-content img {
+    width: 200px;
+    display: flex;
+}
+
+
+
+@media only screen and (max-width: 788px) {
+    #portfolio-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+}
+
+/* Our Team Section */
+
+
+
+#team-container {
+    background-image: url(../images/background-image2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.team-header h2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.team-members img{
+    height: 300px;
+    width: auto;
+   
+}
+
+.team-members{
+    flex-basis: 300px;
+    text-align: center;
+    text-shadow: 2px 2px 0 #22272e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.team-members p {
+    font-size: 1.65rem;
+    
+}
+
+.team-members h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    #team-container {
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* Contact section */
+
+#contact h2, #contact h3, #contact h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+/* Footer Section */
+
+footer h4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
